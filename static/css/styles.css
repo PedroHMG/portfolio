@@ -1,0 +1,54 @@
+:root {
+    --blue-ph: rgb(224, 223, 255);
+    --transp: #00000000;
+  }
+
+
+
+header .row .col-md-8 {
+    padding: 22vmin 1vmin;
+}
+header .row .col-md-4 {
+    padding: 22vmin 1vmin;
+}
+
+.welcome {
+    overflow: hidden;
+}
+
+.hidden {
+    display: inline-block;
+    padding:5px;
+    background:linear-gradient(to right, transparent 50%, var(--blue-ph) 50%);
+    background-size: 200%;
+    cursor: pointer;
+    color: var(--transp);
+    transition: 1s ease;
+  }
+  
+.show {
+    animation: slide-box 1s forwards;
+}
+
+@keyframes
+slide-box {
+    45% {
+        background-position:-100%;
+        color: var(--transp);
+    }
+    46% {
+        background-position:-100%;
+        color: var(--transp);
+    }
+    50% {
+        background-position:-100%;
+        color: var(--blue-ph);
+    }
+    99.9% {
+        background-position:-199%;
+        color: var(--blue-ph);
+    }
+    100%{
+        color: var(--blue-ph);
+    }
+}
